@@ -5,4 +5,19 @@ const orderNumbers = (array) => {
   let oddNumbers = [];
 
   // Tu codigo acá
+  array.forEach(number => {
+    if (number > 0) {
+      evenNumbers.push(number)
+    } else {
+      oddNumbers.push(number)
+    }
+  });
+
+  return [evenNumbers, oddNumbers]
 }
+
+const [positive, negative] = orderNumbers(randomNumbers)
+
+// console.log(orderNumbers(randomNumbers));
+console.log(positive);
+console.log(negative);
